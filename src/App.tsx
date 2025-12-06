@@ -9,6 +9,7 @@ import type { Product, CartItem } from "./types/product";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+      import { Phone, Clock, MapPin } from "lucide-react";
 
 function App() {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
@@ -204,30 +205,59 @@ function App() {
             </div>
 
             {/* Contact */}
-            <div>
-              <h3 className="text-lg font-bold mb-4 border-l-4 border-orange-500 pl-3">
-                Contact Us
-              </h3>
-              <p className="text-gray-400 text-sm mb-2">
-                📞 Phone:{" "}
-                <span className="font-medium text-orange-400">
-                  +91 98765 43210
-                </span>
-              </p>
-              <p className="text-gray-400 text-sm">🕒 7 AM – 9 PM</p>
+    
 
-              <p className="text-gray-400 mt-4 text-sm leading-relaxed">
-                📍 Address:
-                <br />
-                <span className="font-medium text-orange-300">
-                  PO Box 79711 Azikiwe GP,
-                  <br />
-                  Vijibweni, Block 27 Uzunguni Street Kigamboni.
-                </span>
-              </p>
-            </div>
+{/* Contact */}
+<div>
+  <h3 className="text-lg font-bold mb-5 border-l-4 border-orange-500 pl-3">
+    Contact Us
+  </h3>
 
-            {/* Newsletter */}
+  {/* Phone */}
+  <div className="flex items-start space-x-3 mb-4">
+    <Phone className="w-5 h-5 text-orange-400 mt-1" />
+    <div className="text-sm text-gray-300">
+    
+      <a
+        href="tel:+255748503492"
+        className="block text-gray-400 hover:text-orange-300 transition"
+      >
+        +255 748 503 492
+      </a>
+      <a
+        href="tel:+255757612525"
+        className="block text-gray-400 hover:text-orange-300 transition"
+      >
+        +255 757 612 525
+      </a>
+    </div>
+  </div>
+
+  {/* Hours */}
+  <div className="flex items-start space-x-3 mb-4">
+    <Clock className="w-5 h-5 text-orange-400 mt-1" />
+    <div className="text-sm text-gray-300">
+ 
+      <p className="text-gray-400">7 AM – 9 PM</p>
+    </div>
+  </div>
+
+  {/* Address */}
+  <div className="flex items-start space-x-3">
+    <MapPin className="w-5 h-5 text-orange-400 mt-1" />
+    <div className="text-sm text-gray-300 leading-relaxed">
+  
+      <p className="text-gray-400">
+        PO Box 79711 Azikiwe GP,
+        <br />
+        Vijibweni, Block 27 Uzunguni Street Kigamboni.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+      
             {/* Help & Support */}
             <div>
               <h3 className="text-lg font-bold mb-4 border-l-4 border-orange-500 pl-3">
@@ -242,7 +272,7 @@ function App() {
               </p>
 
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/255748503492"
                 target="_blank"
                 className="inline-flex items-center px-5 py-2 bg-green-600 hover:bg-green-700 rounded-md text-white font-semibold transition"
               >

@@ -22,7 +22,7 @@ export default function Header({ cartItems, onCartClick }: HeaderProps) {
           </a>
           <a href="mailto:info@optifirst.com" className="flex items-center gap-2 hover:text-yellow-400">
             <Mail className="w-4 h-4" />
-            <span className="hidden sm:inline">info@optifirst.com</span>
+            <span className="hidden sm:inline">info@optifirst.co.tz</span>
           </a>
         </div>
 
