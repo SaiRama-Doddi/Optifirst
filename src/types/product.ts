@@ -106,7 +106,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '500gm',
     price: 140,
-    image: 'https://images.pexels.com/photos/1638393/pexels-photo-1638393.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/736x/9f/a6/29/9fa62945fe989bba7ce43b654904c261.jpg',
     description: 'Succulent drumsticks, great for roasting and curry'
   },
   {
@@ -133,7 +133,7 @@ export const products: Product[] = [
     category: 'offals',
     weight: '250gm',
     price: 80,
-    image: 'https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/736x/a6/21/d7/a621d7a99b747a0b3876d0ec2499dd16.jpg',
     description: 'Fresh chicken liver, nutrient-rich and flavorful'
   },
   {
@@ -142,7 +142,7 @@ export const products: Product[] = [
     category: 'offals',
     weight: '250gm',
     price: 70,
-    image: 'https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/736x/22/96/40/229640803f4dfde02c69a9410b54431c.jpg',
     description: 'Cleaned chicken gizzard, perfect for curries'
   },
   {
@@ -151,7 +151,7 @@ export const products: Product[] = [
     category: 'offals',
     weight: '250gm',
     price: 40,
-    image: 'https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/736x/32/6b/49/326b494eeac668a4ff87ed5eb55cf92e.jpg',
     description: 'For traditional recipes and special dishes'
   },
   {
@@ -160,7 +160,7 @@ export const products: Product[] = [
     category: 'offals',
     weight: '500gm',
     price: 50,
-    image: 'https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/1200x/63/4f/2f/634f2fe9db773d347339b2daf732589a.jpg',
     description: 'Ideal for making rich chicken stock'
   },
   {
@@ -169,7 +169,7 @@ export const products: Product[] = [
     category: 'offals',
     weight: '500gm',
     price: 60,
-    image: 'https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/736x/cc/30/83/cc30832330292bd29e1ab9a5b0ad4f89.jpg',
     description: 'Collagen-rich chicken feet'
   },
   {
@@ -178,7 +178,7 @@ export const products: Product[] = [
     category: 'offals',
     weight: '500gm',
     price: 90,
-    image: 'https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/736x/4e/56/2b/4e562b2fe00aa1699c65056842f2fba8.jpg',
     description: 'Assorted offals for traditional cooking'
   },
   {
@@ -187,7 +187,7 @@ export const products: Product[] = [
     category: 'eggs',
     quantity: 6,
     price: 60,
-    image: 'https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/736x/83/9e/ac/839eac8b3b90203638c8bc715c0b3143.jpg',
     description: 'Farm fresh eggs, 6 pieces'
   },
   {
@@ -196,7 +196,7 @@ export const products: Product[] = [
     category: 'eggs',
     quantity: 15,
     price: 150,
-    image: 'https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/1200x/e7/ec/ad/e7ecad2cb4407d501f771f28ec66ce45.jpg',
     description: 'Farm fresh eggs, 15 pieces'
   },
   {
@@ -205,7 +205,7 @@ export const products: Product[] = [
     category: 'eggs',
     quantity: 30,
     price: 280,
-    image: 'https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/1200x/15/35/3e/15353ed0b6de9533ae1cd80a9ea668b3.jpg',
     description: 'Farm fresh eggs, 30 pieces'
   }
 ];

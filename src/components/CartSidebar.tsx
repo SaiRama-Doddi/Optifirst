@@ -118,7 +118,7 @@ const convertToUSD = (priceInINR: number) => {
               </div>
               <button
                 onClick={onCheckout}
-                className="w-full bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-105"
+                className="w-full cursor-pointer bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-105"
               >
                 Proceed to Checkout
               </button>

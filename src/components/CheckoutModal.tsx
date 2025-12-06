@@ -15,6 +15,11 @@ export interface UserDetails {
   address: string;
 }
 
+const INR_TO_USD = 83;
+
+const convertToUSD = (priceInINR: number) => {
+  return (priceInINR / INR_TO_USD).toFixed(2); // example: ₹180 → $2.16
+};
 export default function CheckoutModal({
   isOpen,
   onClose,
@@ -31,6 +36,7 @@ export default function CheckoutModal({
     (sum, item) => sum + item.price * item.cartQuantity,
     0
   );
+  const totalUSD = Number(convertToUSD(total));
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -65,14 +71,15 @@ export default function CheckoutModal({
                 <span className="text-gray-600">
                   {item.name} x {item.cartQuantity}
                 </span>
-                <span className="font-semibold text-gray-900">
-                  ₹{(item.price * item.cartQuantity).toFixed(2)}
-                </span>
+              <span className="font-semibold text-gray-900">
+  ${convertToUSD(item.price * item.cartQuantity)}
+</span>
+
               </div>
             ))}
             <div className="pt-3 border-t flex justify-between text-lg font-bold">
               <span>Total</span>
-              <span className="text-orange-600">₹{total.toFixed(2)}</span>
+              <span className="text-orange-600">${totalUSD.toFixed(2)}</span>
             </div>
           </div>
 

@@ -34,7 +34,7 @@ export default function Header({ cartItems, onCartClick }: HeaderProps) {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img src="/logo.png" alt="Logo" className="w-20 h-20 rounded-full object-cover" />
+            <img src="/logo.png" alt="Logo" className="w-23 h-20 rounded-full object-cover" />
           </div>
 
           {/* Desktop Nav */}
@@ -52,7 +52,7 @@ export default function Header({ cartItems, onCartClick }: HeaderProps) {
             {/* Cart */}
             <button
               onClick={onCartClick}
-              className="relative p-2 hover:bg-gray-100 rounded-full transition"
+              className="relative p-2 hover:bg-gray-100 rounded-full transition cursor-pointer"
             >
               <ShoppingCart className="w-6 h-6 text-gray-700" />
               {totalItems > 0 && (
