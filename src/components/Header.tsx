@@ -9,12 +9,13 @@ interface HeaderProps {
 
 export default function Header({ cartItems, onCartClick }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const totalItems = cartItems.reduce((sum, item) => sum + item.cartQuantity, 0);
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       {/* Top Bar */}
-      <div className="max-w-9xl mx-auto px-4 py-2 sm:px-6 lg:px-8 flex justify-between items-center text-sm bg-gradient-to-r from-orange-500 to-red-600 text-white">
+      <div className="max-w-9xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex justify-between items-center text-sm bg-gradient-to-r from-orange-500 to-red-600 text-white">
         <div className="flex items-center gap-4">
           <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-yellow-400">
             <Phone className="w-4 h-4" />
@@ -31,24 +32,44 @@ export default function Header({ cartItems, onCartClick }: HeaderProps) {
 
       {/* Main Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20"> {/* Increased Height */}
+          
           {/* Logo */}
           <div className="flex items-center">
-            <img src="/logo.png" alt="Logo" className="w-23 h-20 rounded-full object-cover" />
+            <img src="/logo.png" alt="Logo" className="w-24 h-24 rounded-full object-cover" />
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-8">
-            <a href="#whole-chicken" className="text-gray-700 hover:text-orange-600 transition">Whole Chicken</a>
-            <a href="#cuts" className="text-gray-700 hover:text-orange-600 transition">Cuts</a>
-            <a href="#offals" className="text-gray-700 hover:text-orange-600 transition">Offals</a>
-            <a href="#eggs" className="text-gray-700 hover:text-orange-600 transition">Eggs</a>
-            <a href="#about" className="text-gray-700 hover:text-orange-600 transition">About Us</a>
-            <a href="#contact" className="text-gray-700 hover:text-orange-600 transition">Contact</a>
+          <nav className="hidden md:flex space-x-8 text-lg italic">
+            <a
+              href="#home"
+              className="text-orange-600 font-semibold border-b-2 border-orange-600 pb-1" // Default Active
+            >
+              Home
+            </a>
+            <a href="#whole-chicken" className="text-gray-700 hover:text-orange-600 transition">
+              Whole Chicken
+            </a>
+            <a href="#cuts" className="text-gray-700 hover:text-orange-600 transition">
+              Cuts
+            </a>
+            <a href="#offals" className="text-gray-700 hover:text-orange-600 transition">
+              Offals
+            </a>
+            <a href="#eggs" className="text-gray-700 hover:text-orange-600 transition">
+              Eggs
+            </a>
+            <a href="#about" className="text-gray-700 hover:text-orange-600 transition">
+              About Us
+            </a>
+            <a href="#contact" className="text-gray-700 hover:text-orange-600 transition">
+              Contact
+            </a>
           </nav>
 
           {/* Buttons */}
           <div className="flex items-center space-x-4">
+            
             {/* Cart */}
             <button
               onClick={onCartClick}
@@ -63,75 +84,52 @@ export default function Header({ cartItems, onCartClick }: HeaderProps) {
             </button>
 
             {/* Mobile Menu Button */}
-            <button
-              className="md:hidden p-2"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              {menuOpen ? (
-                <X className="w-6 h-6 text-gray-700" />
-              ) : (
-                <Menu className="w-6 h-6 text-gray-700" />
-              )}
+            <button className="md:hidden p-2" onClick={() => setMenuOpen(!menuOpen)}>
+              {menuOpen ? <X className="w-6 h-6 text-gray-700" /> : <Menu className="w-6 h-6 text-gray-700" />}
             </button>
           </div>
         </div>
       </div>
 
       {/* Mobile Dropdown Menu */}
-    {menuOpen && (
-  <div className="md:hidden bg-white shadow-lg border-t">
-    <nav className="flex flex-col py-4 space-y-2">
-      <a
-        href="#whole-chicken"
-        className="px-6 py-2 text-gray-700 hover:bg-gray-100"
-        onClick={() => setMenuOpen(false)}
-      >
-        Whole Chicken
-      </a>
+      {menuOpen && (
+        <div className="md:hidden bg-white shadow-lg border-t">
+          <nav className="flex flex-col py-4 space-y-2">
+            
+            <a
+              href="#home"
+              className="px-6 py-2 text-orange-600 font-semibold border-b border-orange-600"
+              onClick={() => setMenuOpen(false)}
+            >
+              Home
+            </a>
 
-      <a
-        href="#cuts"
-        className="px-6 py-2 text-gray-700 hover:bg-gray-100"
-        onClick={() => setMenuOpen(false)}
-      >
-        Cuts
-      </a>
+            <a href="#whole-chicken" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+              Whole Chicken
+            </a>
 
-      <a
-        href="#offals"
-        className="px-6 py-2 text-gray-700 hover:bg-gray-100"
-        onClick={() => setMenuOpen(false)}
-      >
-        Offals
-      </a>
+            <a href="#cuts" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+              Cuts
+            </a>
 
-      <a
-        href="#eggs"
-        className="px-6 py-2 text-gray-700 hover:bg-gray-100"
-        onClick={() => setMenuOpen(false)}
-      >
-        Eggs
-      </a>
+            <a href="#offals" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+              Offals
+            </a>
 
-      <a
-        href="#about"
-        className="px-6 py-2 text-gray-700 hover:bg-gray-100"
-        onClick={() => setMenuOpen(false)}
-      >
-        About Us
-      </a>
+            <a href="#eggs" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+              Eggs
+            </a>
 
-      <a
-        href="#contact"
-        className="px-6 py-2 text-gray-700 hover:bg-gray-100"
-        onClick={() => setMenuOpen(false)}
-      >
-        Contact
-      </a>
-    </nav>
-  </div>
-)}
+            <a href="#about" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+              About Us
+            </a>
 
+            <a href="#contact" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+              Contact
+            </a>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

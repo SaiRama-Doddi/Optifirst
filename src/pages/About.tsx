@@ -9,11 +9,16 @@ const About = () => {
                 About OptiFirst
               </h2>
               <div className="max-w-3xl mx-auto">
-                <p className="text-lg text-gray-600 mb-6">
-                  At OptiFirst, we're committed to delivering the freshest, highest quality chicken and eggs straight from our farm to your table. With over 20 years of experience in poultry farming, we understand what it takes to produce premium products that you can trust.
+                <p className="text-lg text-gray-600 mb-6 text-justify">
+The journey of OptiFirst began with a simple yet profound passion: to provide the community with genuinely good, nutritious food. We believe that health starts at the source, and our commitment is to the highest standards of animal husbandry and agricultural best practices.
+
                 </p>
-                <p className="text-lg text-gray-600">
-                  Our commitment to quality, sustainability, and customer satisfaction sets us apart. Every product is carefully selected, processed, and packaged to ensure maximum freshness and flavor.
+                <p className="text-lg text-gray-600 text-justify mb-6">
+Our philosophy is rooted in care and quality. This commitment is evident in every step of our process: from utilizing high-value, nutritious feed to raising our chicks with meticulous care in a safe, healthy environment. We ensure every product that reaches your table is a testament to our dedication to wellness and excellence.
+
+                </p>
+                <p  className="text-lg text-gray-600 text-justify">
+                  At OptiFirst, we're not just producing food ,we're cultivating trust and nourishing lives, one meal at a time.
                 </p>
               </div>
             </div>
