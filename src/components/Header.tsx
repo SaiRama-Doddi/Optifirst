@@ -21,7 +21,7 @@ export default function Header({ cartItems, onCartClick }: HeaderProps) {
             <Phone className="w-4 h-4" />
             <span className="hidden sm:inline">+123 456 7890</span>
           </a>
-          <a href="mailto:info@optifirst.com" className="flex items-center gap-2 hover:text-yellow-400">
+          <a href="mailto:info@optifirst.co.tz" className="flex items-center gap-2 hover:text-yellow-400">
             <Mail className="w-4 h-4" />
             <span className="hidden sm:inline">info@optifirst.co.tz</span>
           </a>
@@ -36,7 +36,7 @@ export default function Header({ cartItems, onCartClick }: HeaderProps) {
           
           {/* Logo */}
           <div className="flex items-center">
-            <img src="/logo.png" alt="Logo" className="w-24 h-24 rounded-full object-cover" />
+            <img src="/logo.png" alt="Logo" className="w-30 h-28 rounded-full object-cover" />
           </div>
 
           {/* Desktop Nav */}

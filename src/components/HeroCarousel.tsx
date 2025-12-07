@@ -12,15 +12,16 @@ const slides = [
     title: 'Quality Chicken Cuts',
     subtitle: 'Specially selected for your family'
   },
-   {
-    url: 'https://images.pexels.com/photos/6419733/pexels-photo-6419733.jpeg',
-    title: 'Fresh Chicken Cuts',
-    subtitle: 'Perfectly portioned for your needs'
-  },
+
   {
-    image: 'https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'https://static.vecteezy.com/system/resources/previews/030/637/817/large_2x/eggs-image-hd-free-photo.jpg',
     title: 'Farm Fresh Eggs',
     subtitle: 'Delivered fresh daily'
+  },
+     {
+    image: 'https://www.tastingtable.com/img/gallery/the-best-cuts-of-chicken-ranked/l-intro-1659739353.jpg',
+    title: 'Fresh Chicken Cuts',
+    subtitle: 'Perfectly portioned for your needs'
   }
 ];
 
@@ -59,7 +60,7 @@ export default function HeroCarousel() {
           />
           <div className="absolute inset-0 z-20 flex items-center justify-center text-center">
             <div className="max-w-3xl px-4">
-              <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
+              <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 italic">
                 {slide.title}
               </h2>
               <p className="text-xl md:text-2xl text-white/90">{slide.subtitle}</p>

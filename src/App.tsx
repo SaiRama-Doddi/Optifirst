@@ -9,7 +9,7 @@ import type { Product, CartItem } from "./types/product";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
-      import { Phone, Clock, MapPin } from "lucide-react";
+import { Phone, Clock, MapPin } from "lucide-react";
 
 function App() {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
@@ -147,37 +147,35 @@ function App() {
               </p>
 
               {/* Social Icons */}
-         
 
-<div className="flex space-x-4 mt-5">
-  {[
-    {
-      href: "https://facebook.com",
-      icon: Facebook,
-      color: "hover:bg-blue-600",
-    },
-    {
-      href: "https://www.instagram.com/optifirsttz?igsh=MWN2dHY2emp6Y3Q0MQ%3D%3D",
-      icon: Instagram,
-      color: "hover:bg-pink-600",
-    },
-    {
-      href: "https://www.linkedin.com/company/optifirst-tz-limited/",
-      icon: Linkedin,
-      color: "hover:bg-green-500",
-    },
-  ].map((s, index) => (
-    <a
-      key={index}
-      href={s.href}
-      target="_blank"
-      className={`w-11 h-11 flex items-center justify-center bg-gray-800 rounded-full transition ${s.color}`}
-    >
-      <s.icon className="w-5 h-5 text-white" />
-    </a>
-  ))}
-</div>
-
+              <div className="flex space-x-4 mt-5">
+                {[
+                  {
+                    href: "https://facebook.com",
+                    icon: Facebook,
+                    color: "hover:bg-blue-600",
+                  },
+                  {
+                    href: "https://www.instagram.com/optifirsttz?igsh=MWN2dHY2emp6Y3Q0MQ%3D%3D",
+                    icon: Instagram,
+                    color: "hover:bg-pink-600",
+                  },
+                  {
+                    href: "https://www.linkedin.com/company/optifirst-tz-limited/",
+                    icon: Linkedin,
+                    color: "hover:bg-green-500",
+                  },
+                ].map((s, index) => (
+                  <a
+                    key={index}
+                    href={s.href}
+                    target="_blank"
+                    className={`w-11 h-11 flex items-center justify-center bg-gray-800 rounded-full transition ${s.color}`}
+                  >
+                    <s.icon className="w-5 h-5 text-white" />
+                  </a>
+                ))}
+              </div>
             </div>
 
             {/* Quick Links */}
@@ -205,59 +203,53 @@ function App() {
             </div>
 
             {/* Contact */}
-    
 
-{/* Contact */}
-<div>
-  <h3 className="text-lg font-bold mb-5 border-l-4 border-orange-500 pl-3">
-    Contact Us
-  </h3>
+            {/* Contact */}
+            <div>
+              <h3 className="text-lg font-bold mb-5 border-l-4 border-orange-500 pl-3">
+                Contact Us
+              </h3>
 
-  {/* Phone */}
-  <div className="flex items-start space-x-3 mb-4">
-    <Phone className="w-5 h-5 text-orange-400 mt-1" />
-    <div className="text-sm text-gray-300">
-    
-      <a
-        href="tel:+255748503492"
-        className="block text-gray-400 hover:text-orange-300 transition"
-      >
-        0 748 504 492
-      </a>
-      <a
-        href="tel:+255757612525"
-        className="block text-gray-400 hover:text-orange-300 transition"
-      >
-        0 757 612 525
-      </a>
-    </div>
-  </div>
+              {/* Phone */}
+              <div className="flex items-start space-x-3 mb-4">
+                <Phone className="w-5 h-5 text-orange-400 mt-1" />
+                <div className="text-sm text-gray-300">
+                  <a
+                    href="tel:+255748503492"
+                    className="block text-gray-400 hover:text-orange-300 transition"
+                  >
+                    0 748 504 492
+                  </a>
+                  <a
+                    href="tel:+255757612525"
+                    className="block text-gray-400 hover:text-orange-300 transition"
+                  >
+                    0 757 612 525
+                  </a>
+                </div>
+              </div>
 
-  {/* Hours */}
-  <div className="flex items-start space-x-3 mb-4">
-    <Clock className="w-5 h-5 text-orange-400 mt-1" />
-    <div className="text-sm text-gray-300">
- 
-      <p className="text-gray-400">7 AM – 9 PM</p>
-    </div>
-  </div>
+              {/* Hours */}
+              <div className="flex items-start space-x-3 mb-4">
+                <Clock className="w-5 h-5 text-orange-400 mt-1" />
+                <div className="text-sm text-gray-300">
+                  <p className="text-gray-400">7 AM – 9 PM</p>
+                </div>
+              </div>
 
-  {/* Address */}
-  <div className="flex items-start space-x-3">
-    <MapPin className="w-5 h-5 text-orange-400 mt-1" />
-    <div className="text-sm text-gray-300 leading-relaxed">
-  
-      <p className="text-gray-400">
-        PO Box 79711 Azikiwe GP,
-        <br />
-        Vijibweni, Block 27 Uzunguni Street Kigamboni.
-      </p>
-    </div>
-  </div>
-</div>
+              {/* Address */}
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-orange-400 mt-1" />
+                <div className="text-sm text-gray-300 leading-relaxed">
+                  <p className="text-gray-400">
+                    PO Box 79711 Azikiwe GP,
+                    <br />
+                    Vijibweni, Block 27 Uzunguni Street Kigamboni.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-
-      
             {/* Help & Support */}
             <div>
               <h3 className="text-lg font-bold mb-4 border-l-4 border-orange-500 pl-3">
