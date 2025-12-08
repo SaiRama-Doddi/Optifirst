@@ -43,7 +43,7 @@ const FloatingButtons: React.FC = () => {
       {showScroll && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-28 right-8 bg-orange-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-800 hover:scale-110 transition-transform duration-300 z-40 cursor-pointer"
+          className="fixed bottom-28 right-8 bg-orange-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-orange-800 hover:scale-110 transition-transform duration-300 z-40 cursor-pointer"
           aria-label="Scroll to Top"
         >
           <FaArrowUp className="w-6 h-6" />
