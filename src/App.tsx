@@ -71,10 +71,7 @@ function App() {
     userDetails: UserDetails,
     items: CartItem[]
   ) => {
-    const total = items.reduce(
-      (sum, item) => sum + item.price * item.cartQuantity,
-      0
-    );
+  
 
     let message = `*New Order from OptiFirst*\n\n`;
     message += `*Customer Details:*\n`;
@@ -90,7 +87,7 @@ function App() {
       ).toFixed(2)}\n`;
     });
 
-    message += `\n*Total Amount: ₹${total.toFixed(2)}*`;
+    message += `\n*Thank you for choosing OptiFirst!*`;
     return message;
   };
 
