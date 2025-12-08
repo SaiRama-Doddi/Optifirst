@@ -16,10 +16,11 @@ export default function CartSidebar({
   onUpdateQuantity,
   onCheckout
 }: CartSidebarProps) {
-  const total = cartItems.reduce(
-    (sum, item) => sum + item.price * item.cartQuantity,
-    0
-  );
+  
+
+
+
+
 
 
 
