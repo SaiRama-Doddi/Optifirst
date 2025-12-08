@@ -152,7 +152,7 @@ export const products: Product[] = [
     image: 'https://i.pinimg.com/736x/22/96/40/229640803f4dfde02c69a9410b54431c.jpg',
     description: 'Cleaned chicken gizzard, perfect for curries'
   },
-  {
+ /*  {
     id: 'offal-head',
     name: 'Chicken Head',
     category: 'offals',
@@ -175,7 +175,7 @@ export const products: Product[] = [
     price: 60,
     image: '/feet.jpg',
     description: 'Collagen-rich chicken feet'
-  },
+  }, */
   /*
   {
     id: 'offal-mix',
