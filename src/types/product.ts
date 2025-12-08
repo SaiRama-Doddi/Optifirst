@@ -165,7 +165,7 @@ export const products: Product[] = [
     name: 'Chicken Back',
     category: 'offals',
     price: 50,
-    image: 'https://i.pinimg.com/1200x/63/4f/2f/634f2fe9db773d347339b2daf732589a.jpg',
+    image: 'https://slapfarms.com/wp-content/uploads/ChiceknBackshoppable.jpg',
     description: 'Ideal for making rich chicken stock'
   },
   {

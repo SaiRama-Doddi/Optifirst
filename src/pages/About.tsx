@@ -20,17 +20,20 @@ const About = () => {
           {/* Left Content */}
           <div>
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4 text-justify">
+              Optifirst signifies ‘Optimum Nutrition First.’ It captures our mission to prioritise superior nutrition and quality at every step of our production process, ensuring consumers receive safe, wholesome, and premium poultry.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4 text-justify">
               OptiFirst began with a simple belief—<span className="font-semibold">good food builds healthy lives</span>.
               What started as a passion for delivering fresh, nutritious poultry has grown into a mission
               of providing wholesome products to homes across the region.
             </p>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4 text-justify">
               From nutrient-rich feed to clean and safe farming environments, every step of
               our process is guided by care and integrity. We ensure that quality is not just met,
               but consistently exceeded.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-justify">
               At OptiFirst, we're not just raising poultry—we're building trust and nurturing healthier lives.
             </p>
           </div>
