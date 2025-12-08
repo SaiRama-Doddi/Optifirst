@@ -24,16 +24,6 @@ export default function CartSidebar({
 
 
 
-
-
-
-const INR_TO_USD = 83;
-
-const convertToUSD = (priceInINR: number) => {
-  return (priceInINR / INR_TO_USD).toFixed(2); // example: ₹180 → $2.16
-};
-  const totalUSD = Number(convertToUSD(total));
-
   return (
     <>
       <div

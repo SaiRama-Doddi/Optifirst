@@ -15,11 +15,7 @@ export interface UserDetails {
   address: string;
 }
 
-const INR_TO_USD = 83;
 
-const convertToUSD = (priceInINR: number) => {
-  return (priceInINR / INR_TO_USD).toFixed(2); // example: ₹180 → $2.16
-};
 export default function CheckoutModal({
   isOpen,
   onClose,
@@ -32,11 +28,8 @@ export default function CheckoutModal({
     address: ''
   });
 
-  const total = cartItems.reduce(
-    (sum, item) => sum + item.price * item.cartQuantity,
-    0
-  );
-  const totalUSD = Number(convertToUSD(total));
+
+
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
