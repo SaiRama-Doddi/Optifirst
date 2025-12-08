@@ -8,7 +8,7 @@ const slides = [
     subtitle: 'Fresh, cleaned & ready to cook'
   },
   {
-    image: '/bg-image.jpg',
+    image: '/carousel.jpg',
     title: 'Farm-Fresh Excellence',
     subtitle: 'Specially selected for your family'
   },
