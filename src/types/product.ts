@@ -152,14 +152,14 @@ export const products: Product[] = [
     image: 'https://i.pinimg.com/736x/22/96/40/229640803f4dfde02c69a9410b54431c.jpg',
     description: 'Cleaned chicken gizzard, perfect for curries'
   },
-  {
+/*   {
     id: 'offal-head',
     name: 'Chicken Head',
     category: 'offals',
     price: 40,
     image: 'https://i.pinimg.com/736x/32/6b/49/326b494eeac668a4ff87ed5eb55cf92e.jpg',
     description: 'For traditional recipes and special dishes'
-  },
+  }, */
 /*   {
     id: 'offal-back',
     name: 'Chicken Back',

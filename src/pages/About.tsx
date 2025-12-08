@@ -102,7 +102,7 @@ const About = () => {
             <div className="w-20 h-20 bg-gradient-to-r from-blue-700 to-indigo-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-extrabold shadow-md">
               A+
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Quality Certified</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Halal Certified</h3>
             <p className="text-gray-600 leading-relaxed">
               Verified premium quality backed by rigorous industry certification standards.
             </p>

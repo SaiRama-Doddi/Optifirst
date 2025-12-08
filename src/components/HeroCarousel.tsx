@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 const slides = [
   {
-    image: 'https://i.pinimg.com/1200x/0c/9c/89/0c9c89bf8503c6d2ac55b85afa216dc2.jpg',
+    image: 'https://bruchsbutchery.co.za/wp-content/uploads/2021/06/chicken-whole.jpeg',
     title: 'Premium Whole Chicken',
     subtitle: 'Fresh, cleaned & ready to cook'
   },
