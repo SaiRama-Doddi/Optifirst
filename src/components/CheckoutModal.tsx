@@ -68,16 +68,25 @@ export default function CheckoutModal({
 
               </div>
             ))}
-            <div className="pt-3 border-t flex justify-between text-lg font-bold">
-              <span>Total</span>
-                {cartItems.map((item) => (
-                  <div>
-                 <span className="text-orange-600"> {item.name} {item.weight} </span><br/>
-                 <span className='text-orange-600'>Quantity: {item.cartQuantity}</span>
-                  </div>
-              
-                ))}
-            </div>
+           <div className="pt-3 border-t text-lg font-bold">
+  <div className="flex justify-between items-start">
+    <span>Total</span>
+
+    <div className="flex flex-col items-end space-y-2">
+      {cartItems.map((item) => (
+        <div key={item.id} className="text-right">
+          <span className="text-orange-600 block">
+            {item.name} {item.weight}
+          </span>
+          <span className="text-orange-600 text-sm">
+            Quantity: {item.cartQuantity}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
