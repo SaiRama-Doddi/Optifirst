@@ -141,7 +141,7 @@ export const products: Product[] = [
     name: 'Chicken Liver',
     category: 'offals',
     price: 80,
-    image: 'https://vintage-recipes.com/wp-content/uploads/2024/08/Chicken-Livers-Horizontal.jpg',
+    image: 'https://i.pinimg.com/1200x/79/3a/14/793a14a38d090835ce2f498f21f0263a.jpg',
     description: 'Fresh chicken liver, nutrient-rich and flavorful'
   },
   {
