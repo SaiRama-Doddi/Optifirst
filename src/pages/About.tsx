@@ -38,7 +38,7 @@ const About = () => {
           {/* Right Image */}
           <div className="w-full">
             <img
-              src="https://i.pinimg.com/1200x/9d/06/a4/9d06a480b2eb204bfa05c24fdce8a565.jpg"
+              src="/about.jpg"
               alt="Our Story"
               className="rounded-3xl shadow-lg w-full object-cover h-[350px] md:h-[450px]"
             />
@@ -100,7 +100,7 @@ const About = () => {
           {/* Feature 3 */}
           <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
             <div className="w-20 h-20 bg-gradient-to-r from-blue-700 to-indigo-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-extrabold shadow-md">
-              A+
+              <img src="/halal.jpg" alt="" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-3">Halal Certified</h3>
             <p className="text-gray-600 leading-relaxed">

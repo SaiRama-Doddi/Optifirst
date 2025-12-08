@@ -219,7 +219,7 @@ function App() {
                     href="tel:+255748503492"
                     className="block text-gray-400 hover:text-orange-300 transition"
                   >
-                    0 748 504 492
+                    0 748 503 492
                   </a>
                   <a
                     href="tel:+255757612525"
