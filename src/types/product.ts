@@ -173,7 +173,7 @@ export const products: Product[] = [
     name: 'Chicken Feet',
     category: 'offals',
     price: 60,
-    image: 'https://i.pinimg.com/736x/cc/30/83/cc30832330292bd29e1ab9a5b0ad4f89.jpg',
+    image: '/feet.jpg',
     description: 'Collagen-rich chicken feet'
   },
   /*
