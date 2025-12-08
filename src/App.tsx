@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { Phone, Clock, MapPin } from "lucide-react";
+import FloatingButtons from "./components/FloatingButton";
 
 function App() {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
@@ -287,6 +288,7 @@ function App() {
           </div>
         </div>
       </footer>
+      <FloatingButtons/>
 
       <CartSidebar
         isOpen={isCartOpen}
