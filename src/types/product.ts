@@ -86,7 +86,7 @@ export const products: Product[] = [
     id: 'cut-breast',
     name: 'Chicken Breast',
     category: 'cuts',
-    weight: '500gm',
+    weight: '1KG',
     price: 180,
     image: 'https://i.pinimg.com/1200x/e3/39/1a/e3391a187bc06e904414c38e3d0f67a4.jpg',
     description: 'Premium boneless chicken breast, ideal for grilling and frying'
@@ -95,7 +95,7 @@ export const products: Product[] = [
     id: 'cut-wings',
     name: 'Chicken Wings',
     category: 'cuts',
-    weight: '500gm',
+    weight: '1KG',
     price: 120,
     image: 'https://i.pinimg.com/originals/ba/b2/80/bab2808aeefe513910e2306504742af8.jpg',
     description: 'Juicy chicken wings, perfect for BBQ and appetizers'
@@ -104,7 +104,7 @@ export const products: Product[] = [
     id: 'cut-thigh',
     name: 'Chicken Thigh Boneless',
     category: 'cuts',
-    weight: '500gm',
+    weight: '1KG',
     price: 160,
     image: 'https://i.pinimg.com/1200x/9c/56/6e/9c566eab92aa534a8cea6c6b91dd756f.jpg',
     description: 'Tender boneless thigh meat, rich in flavor'
@@ -113,7 +113,7 @@ export const products: Product[] = [
     id: 'cut-drumstick',
     name: 'Chicken Drumsticks',
     category: 'cuts',
-    weight: '500gm',
+    weight: '1KG',
     price: 140,
     image: 'https://i.pinimg.com/1200x/f3/12/2a/f3122a4a3f8dcf507cd9980d13ec3981.jpg',
     description: 'Succulent drumsticks, great for roasting and curry'
@@ -122,7 +122,7 @@ export const products: Product[] = [
     id: 'cut-quarter',
     name: 'Chicken Quarter Legs',
     category: 'cuts',
-    weight: '500gm',
+    weight: '1KG',
     price: 130,
     image: 'https://i.pinimg.com/736x/1c/87/89/1c8789472f7b81125642bc7b89916c52.jpg',
     description: 'Full leg quarters with thigh and drumstick'
@@ -131,9 +131,9 @@ export const products: Product[] = [
     id: 'cut-mix',
     name: 'Mixed Cuts',
     category: 'cuts',
-    weight: '500gm',
+    weight: '1KG',
     price: 150,
-    image: 'https://i.pinimg.com/1200x/08/57/12/0857123c4cae85b5bc0fe37f0abf4319.jpg',
+    image: 'https://doulabiz.com/wp-content/uploads/2021/09/Mixed-chicken-parts.jpeg',
     description: 'Assorted chicken cuts for variety in your meals'
   },
   {
@@ -160,7 +160,7 @@ export const products: Product[] = [
     image: 'https://i.pinimg.com/736x/32/6b/49/326b494eeac668a4ff87ed5eb55cf92e.jpg',
     description: 'For traditional recipes and special dishes'
   },
-  {
+/*   {
     id: 'offal-back',
     name: 'Chicken Back',
     category: 'offals',
@@ -183,7 +183,7 @@ export const products: Product[] = [
     price: 90,
     image: 'https://i.pinimg.com/736x/4e/56/2b/4e562b2fe00aa1699c65056842f2fba8.jpg',
     description: 'Assorted offals for traditional cooking'
-  },
+  }, */
   {
     id: 'egg-6',
     name: 'Eggs Tray',

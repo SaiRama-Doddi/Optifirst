@@ -43,8 +43,14 @@ export default function Header({ cartItems, onCartClick }: HeaderProps) {
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-8 text-lg italic">
             <a
-              href="#home"
-              onClick={() => setActiveLink("home")}
+              href="#home" onClick={(e) => {
+    e.preventDefault();               // stop default jump
+    setActiveLink("home");            // set active menu
+    window.scrollTo({                 // scroll to top smoothly
+      top: 0,
+      behavior: "smooth",
+    });
+  }} 
                className={
       activeLink === "home"
         ? "text-orange-600 font-semibold border-b-2 border-orange-600 pb-1"
