@@ -9,6 +9,9 @@ interface HeaderProps {
 
 export default function Header({ cartItems, onCartClick }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("home");
+
+
 
   const totalItems = cartItems.reduce((sum, item) => sum + item.cartQuantity, 0);
 
@@ -19,15 +22,13 @@ export default function Header({ cartItems, onCartClick }: HeaderProps) {
         <div className="flex items-center gap-4">
           <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-yellow-400">
             <Phone className="w-4 h-4" />
-            <span className="hidden sm:inline">+123 456 7890</span>
+            <span className="hidden sm:inline">0 757 612 525</span>
           </a>
           <a href="mailto:info@optifirst.co.tz" className="flex items-center gap-2 hover:text-yellow-400">
             <Mail className="w-4 h-4" />
             <span className="hidden sm:inline">info@optifirst.co.tz</span>
           </a>
         </div>
-
-        <div className="text-xs sm:text-sm">Free Delivery on Orders Above $50</div>
       </div>
 
       {/* Main Header */}
@@ -43,26 +44,71 @@ export default function Header({ cartItems, onCartClick }: HeaderProps) {
           <nav className="hidden md:flex space-x-8 text-lg italic">
             <a
               href="#home"
-              className="text-orange-600 font-semibold border-b-2 border-orange-600 pb-1" // Default Active
+              onClick={() => setActiveLink("home")}
+               className={
+      activeLink === "home"
+        ? "text-orange-600 font-semibold border-b-2 border-orange-600 pb-1"
+        : "text-gray-700 hover:text-orange-600 transition"
+    } // Default Active
             >
               Home
             </a>
-            <a href="#whole-chicken" className="text-gray-700 hover:text-orange-600 transition">
+            <a href="#whole-chicken"
+             onClick={() => setActiveLink("whole-chicken")}
+            
+            className={
+      activeLink === "whole-chicken"
+        ? "text-orange-600 font-semibold border-b-2 border-orange-600 pb-1"
+        : "text-gray-700 hover:text-orange-600 transition"
+    }>
               Whole Chicken
             </a>
-            <a href="#cuts" className="text-gray-700 hover:text-orange-600 transition">
+            <a href="#cuts"
+             onClick={() => setActiveLink("cuts")}
+            
+           className={
+      activeLink === "cuts"
+        ? "text-orange-600 font-semibold border-b-2 border-orange-600 pb-1"
+        : "text-gray-700 hover:text-orange-600 transition"
+    }>
               Cuts
             </a>
-            <a href="#offals" className="text-gray-700 hover:text-orange-600 transition">
+            <a href="#offals" 
+             onClick={() => setActiveLink("offals")}
+            
+            className={
+      activeLink === "offals"
+        ? "text-orange-600 font-semibold border-b-2 border-orange-600 pb-1"
+        : "text-gray-700 hover:text-orange-600 transition"
+    }>
               Offals
             </a>
-            <a href="#eggs" className="text-gray-700 hover:text-orange-600 transition">
+            <a href="#eggs" 
+             onClick={() => setActiveLink("eggs")}
+           className={
+      activeLink === "eggs"
+        ? "text-orange-600 font-semibold border-b-2 border-orange-600 pb-1"
+        : "text-gray-700 hover:text-orange-600 transition"
+    }
+            >
               Eggs
             </a>
-            <a href="#about" className="text-gray-700 hover:text-orange-600 transition">
+            <a href="#about"
+             onClick={() => setActiveLink("about")}
+           className={
+      activeLink === "about"
+        ? "text-orange-600 font-semibold border-b-2 border-orange-600 pb-1"
+        : "text-gray-700 hover:text-orange-600 transition"
+    }>
               About Us
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-orange-600 transition">
+            <a href="#contact"
+            onClick={() => setActiveLink("contact")}
+           className={
+      activeLink === "contact"
+        ? "text-orange-600 font-semibold border-b-2 border-orange-600 pb-1"
+        : "text-gray-700 hover:text-orange-600 transition"
+    }>
               Contact
             </a>
           </nav>
@@ -98,33 +144,83 @@ export default function Header({ cartItems, onCartClick }: HeaderProps) {
             
             <a
               href="#home"
-              className="px-6 py-2 text-orange-600 font-semibold border-b border-orange-600"
-              onClick={() => setMenuOpen(false)}
+              className={activeLink === "home" 
+      ? "px-6 py-2 text-orange-600 font-semibold border-b border-orange-600"
+      : "px-6 py-2 text-gray-700 hover:bg-gray-100"}
+  onClick={() => { 
+      setActiveLink("home");
+      setMenuOpen(false);
+  }}
+            
             >
               Home
             </a>
 
-            <a href="#whole-chicken" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+            <a href="#whole-chicken" 
+            
+          className={activeLink === "whole-chicken" 
+      ? "px-6 py-2 text-orange-600 font-semibold border-b border-orange-600"
+      : "px-6 py-2 text-gray-700 hover:bg-gray-100"}
+  onClick={() => { 
+      setActiveLink("whole-chicken");
+      setMenuOpen(false);
+  }}>
               Whole Chicken
             </a>
 
-            <a href="#cuts" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+            <a href="#cuts"
+            
+           className={activeLink === "cuts" 
+      ? "px-6 py-2 text-orange-600 font-semibold border-b border-orange-600"
+      : "px-6 py-2 text-gray-700 hover:bg-gray-100"}
+  onClick={() => { 
+      setActiveLink("cuts");
+      setMenuOpen(false);
+  }}>
               Cuts
             </a>
 
-            <a href="#offals" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+            <a href="#offals" 
+            className={activeLink === "offals" 
+      ? "px-6 py-2 text-orange-600 font-semibold border-b border-orange-600"
+      : "px-6 py-2 text-gray-700 hover:bg-gray-100"}
+  onClick={() => { 
+      setActiveLink("offals");
+      setMenuOpen(false);
+  }}>
               Offals
             </a>
 
-            <a href="#eggs" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+            <a href="#eggs"
+           className={activeLink === "eggs" 
+      ? "px-6 py-2 text-orange-600 font-semibold border-b border-orange-600"
+      : "px-6 py-2 text-gray-700 hover:bg-gray-100"}
+  onClick={() => { 
+      setActiveLink("eggs");
+      setMenuOpen(false);
+  }}>
               Eggs
             </a>
 
-            <a href="#about" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+            <a href="#about"
+            className={activeLink === "about" 
+      ? "px-6 py-2 text-orange-600 font-semibold border-b border-orange-600"
+      : "px-6 py-2 text-gray-700 hover:bg-gray-100"}
+  onClick={() => { 
+      setActiveLink("about");
+      setMenuOpen(false);
+  }}>
               About Us
             </a>
 
-            <a href="#contact" className="px-6 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+            <a href="#contact"
+             className={activeLink === "contact" 
+      ? "px-6 py-2 text-orange-600 font-semibold border-b border-orange-600"
+      : "px-6 py-2 text-gray-700 hover:bg-gray-100"}
+  onClick={() => { 
+      setActiveLink("contact");
+      setMenuOpen(false);
+  }}>
               Contact
             </a>
           </nav>

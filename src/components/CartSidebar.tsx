@@ -85,7 +85,7 @@ const convertToUSD = (priceInINR: number) => {
                       <p className="text-sm text-gray-600">
                         {item.weight || `${item.quantity} pieces`}
                       </p>
-                      <p className="text-orange-600 font-semibold">${convertToUSD(item.price)}</p>
+               
                     </div>
                     <div className="flex items-center space-x-2">
                       <button
@@ -112,10 +112,7 @@ const convertToUSD = (priceInINR: number) => {
 
           {cartItems.length > 0 && (
             <div className="border-t p-6 space-y-4">
-              <div className="flex justify-between items-center text-xl font-bold">
-                <span>Total</span>
-                <span className="text-orange-600">${totalUSD.toFixed(2)}</span>
-              </div>
+             
               <button
                 onClick={onCheckout}
                 className="w-full cursor-pointer bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-105"

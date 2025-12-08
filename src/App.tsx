@@ -226,6 +226,12 @@ function App() {
                   >
                     0 757 612 525
                   </a>
+                  <a
+                    href="tel:+255749369369"
+                    className="block text-gray-400 hover:text-orange-300 transition"
+                  >
+                    0 749 369 369
+                  </a>
                 </div>
               </div>
 

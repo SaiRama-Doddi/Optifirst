@@ -71,15 +71,19 @@ export default function CheckoutModal({
                 <span className="text-gray-600">
                   {item.name} x {item.cartQuantity}
                 </span>
-              <span className="font-semibold text-gray-900">
-  ${convertToUSD(item.price * item.cartQuantity)}
-</span>
+        
 
               </div>
             ))}
             <div className="pt-3 border-t flex justify-between text-lg font-bold">
               <span>Total</span>
-              <span className="text-orange-600">${totalUSD.toFixed(2)}</span>
+                {cartItems.map((item) => (
+                  <div>
+                 <span className="text-orange-600"> {item.name} {item.weight} </span><br/>
+                 <span className='text-orange-600'>Quantity: {item.cartQuantity}</span>
+                  </div>
+              
+                ))}
             </div>
           </div>
 

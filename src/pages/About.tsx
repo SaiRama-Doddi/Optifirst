@@ -1,62 +1,119 @@
 
-
 const About = () => {
   return (
-       <section id="about" className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                About OptiFirst
-              </h2>
-              <div className="max-w-3xl mx-auto">
-                <p className="text-lg text-gray-600 mb-6 text-justify">
-The journey of OptiFirst began with a simple yet profound passion: to provide the community with genuinely good, nutritious food. We believe that health starts at the source, and our commitment is to the highest standards of animal husbandry and agricultural best practices.
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                </p>
-                <p className="text-lg text-gray-600 text-justify mb-6">
-Our philosophy is rooted in care and quality. This commitment is evident in every step of our process: from utilizing high-value, nutritious feed to raising our chicks with meticulous care in a safe, healthy environment. We ensure every product that reaches your table is a testament to our dedication to wellness and excellence.
+        {/* Heading */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-black tracking-wide mb-4">
+            About OptiFirst
+          </h2>
+          <p className="text-xl text-gray-700">
+            Bringing premium-quality, farm-fresh nutrition straight to your table.
+          </p>
+        </div>
 
-                </p>
-                <p  className="text-lg text-gray-600 text-justify">
-                  At OptiFirst, we're not just producing food ,we're cultivating trust and nourishing lives, one meal at a time.
-                </p>
-              </div>
-            </div>
+        {/* Story Section (Left text + Right image) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-blue-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                  100%
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Fresh & Natural</h3>
-                <p className="text-gray-600">
-                  All our products are 100% natural with no artificial additives or preservatives
-                </p>
-              </div>
-
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-yellow-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                  24h
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Fast Delivery</h3>
-                <p className="text-gray-600">
-                  Quick and reliable delivery service to ensure freshness at your doorstep
-                </p>
-              </div>
-
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-blue-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                  A+
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Quality Certified</h3>
-                <p className="text-gray-600">
-                  All products meet the highest industry standards and quality certifications
-                </p>
-              </div>
-            </div>
+          {/* Left Content */}
+          <div>
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              OptiFirst began with a simple belief—<span className="font-semibold">good food builds healthy lives</span>.
+              What started as a passion for delivering fresh, nutritious poultry has grown into a mission
+              of providing wholesome products to homes across the region.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              From nutrient-rich feed to clean and safe farming environments, every step of
+              our process is guided by care and integrity. We ensure that quality is not just met,
+              but consistently exceeded.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              At OptiFirst, we're not just raising poultry—we're building trust and nurturing healthier lives.
+            </p>
           </div>
-        </section>
-  )
-}
 
-export default About
+          {/* Right Image */}
+          <div className="w-full">
+            <img
+              src="https://i.pinimg.com/1200x/9d/06/a4/9d06a480b2eb204bfa05c24fdce8a565.jpg"
+              alt="Our Story"
+              className="rounded-3xl shadow-lg w-full object-cover h-[350px] md:h-[450px]"
+            />
+          </div>
+        </div>
+
+        {/* Our Mission Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+
+          {/* Left Image */}
+          <div className="w-full order-2 md:order-1">
+            <img
+              src="https://i.pinimg.com/1200x/24/60/42/246042d4281b10420c5b3d72e5c9aee6.jpg"
+              alt="Our Mission"
+              className="rounded-3xl shadow-lg w-full object-cover h-[350px] md:h-[450px]"
+            />
+          </div>
+
+          {/* Right Content */}
+          <div className="order-1 md:order-2">
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Our mission is to deliver <span className="font-semibold">the freshest, safest, and highest-quality poultry
+              products</span> while supporting ethical and sustainable farming practices.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              We prioritize transparency, long-term trust, and customer well-being at every step.
+              Your family's health and satisfaction come first—always.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Features / Cards Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+
+          {/* Feature 1 */}
+          <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+            <div className="w-20 h-20 bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-extrabold shadow-md">
+              100%
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Fresh & Natural</h3>
+            <p className="text-gray-600 leading-relaxed">
+              Pure, natural products crafted without artificial additives or preservatives.
+            </p>
+          </div>
+
+          {/* Feature 2 */}
+          <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+            <div className="w-20 h-20 bg-gradient-to-r from-yellow-500 to-orange-400 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-extrabold shadow-md">
+              24h
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Fast Delivery</h3>
+            <p className="text-gray-600 leading-relaxed">
+              Delivered fresh to your doorstep within hours, ensuring peak quality.
+            </p>
+          </div>
+
+          {/* Feature 3 */}
+          <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+            <div className="w-20 h-20 bg-gradient-to-r from-blue-700 to-indigo-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-extrabold shadow-md">
+              A+
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Quality Certified</h3>
+            <p className="text-gray-600 leading-relaxed">
+              Verified premium quality backed by rigorous industry certification standards.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
+
+

@@ -6,11 +6,7 @@ interface ProductCardProps {
   onAddToCart: (product: Product) => void;
 }
 
-const INR_TO_USD = 83;
 
-export const convertToUSD = (priceInINR: number) => {
-  return (priceInINR / INR_TO_USD).toFixed(2);
-};
 
 export default function ProductCard({ product, onAddToCart }: ProductCardProps) {
   return (
@@ -30,9 +26,7 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
           className="h-full object-contain group-hover:scale-110 transition-transform duration-500"
         />
 
-        <div className="absolute top-3 right-3 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">
-          ${convertToUSD(product.price)}
-        </div>
+       
       </div>
 
       {/* Content wrapper with narrow width */}

@@ -3,13 +3,13 @@ import { useState, useEffect } from 'react';
 
 const slides = [
   {
-    image: 'https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'https://i.pinimg.com/1200x/0c/9c/89/0c9c89bf8503c6d2ac55b85afa216dc2.jpg',
     title: 'Premium Whole Chicken',
     subtitle: 'Fresh, cleaned & ready to cook'
   },
   {
-    image: 'https://images.pexels.com/photos/616353/pexels-photo-616353.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    title: 'Quality Chicken Cuts',
+    image: 'https://i.pinimg.com/1200x/a9/fd/e6/a9fde6b88249396a81884b1b8c6e5730.jpg',
+    title: 'Farm-Fresh Excellence',
     subtitle: 'Specially selected for your family'
   },
 
@@ -44,7 +44,8 @@ export default function HeroCarousel() {
   };
 
   return (
-    <div className="relative h-[500px] bg-gray-900 overflow-hidden">
+<div className="relative h-[400px] sm:h-[580px] bg-gray-900 overflow-hidden">
+
       {slides.map((slide, index) => (
         <div
           key={index}

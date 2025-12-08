@@ -11,6 +11,15 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'wc-800',
+    name: 'Whole Chicken',
+    category: 'whole-chicken',
+    weight: '800gm',
+    price: 180,
+    image: '/chicken.png',
+    description: 'Fresh whole chicken, perfectly cleaned and ready to cook'
+  },
+  {
     id: 'wc-900',
     name: 'Whole Chicken',
     category: 'whole-chicken',
@@ -52,7 +61,7 @@ export const products: Product[] = [
     category: 'whole-chicken',
     weight: '1.3KG',
     price: 260,
-    image: 'https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=800',
+   image: '/chicken.png',
     description: 'Fresh whole chicken, perfectly cleaned and ready to cook'
   },
   {
@@ -61,7 +70,7 @@ export const products: Product[] = [
     category: 'whole-chicken',
     weight: '1.4KG',
     price: 280,
-    image: 'https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=800',
+  image: '/chicken.png',
     description: 'Fresh whole chicken, perfectly cleaned and ready to cook'
   },
   {
@@ -70,7 +79,7 @@ export const products: Product[] = [
     category: 'whole-chicken',
     weight: '1.5KG',
     price: 300,
-    image: 'https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=800',
+ image: '/chicken.png',
     description: 'Fresh whole chicken, perfectly cleaned and ready to cook'
   },
   {
@@ -79,7 +88,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '500gm',
     price: 180,
-    image: 'https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/1200x/e3/39/1a/e3391a187bc06e904414c38e3d0f67a4.jpg',
     description: 'Premium boneless chicken breast, ideal for grilling and frying'
   },
   {
@@ -88,7 +97,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '500gm',
     price: 120,
-    image: 'https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/originals/ba/b2/80/bab2808aeefe513910e2306504742af8.jpg',
     description: 'Juicy chicken wings, perfect for BBQ and appetizers'
   },
   {
@@ -97,7 +106,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '500gm',
     price: 160,
-    image: 'https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/1200x/9c/56/6e/9c566eab92aa534a8cea6c6b91dd756f.jpg',
     description: 'Tender boneless thigh meat, rich in flavor'
   },
   {
@@ -106,7 +115,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '500gm',
     price: 140,
-    image: 'https://i.pinimg.com/736x/9f/a6/29/9fa62945fe989bba7ce43b654904c261.jpg',
+    image: 'https://i.pinimg.com/1200x/f3/12/2a/f3122a4a3f8dcf507cd9980d13ec3981.jpg',
     description: 'Succulent drumsticks, great for roasting and curry'
   },
   {
@@ -115,7 +124,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '500gm',
     price: 130,
-    image: 'https://images.pexels.com/photos/616353/pexels-photo-616353.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/736x/1c/87/89/1c8789472f7b81125642bc7b89916c52.jpg',
     description: 'Full leg quarters with thigh and drumstick'
   },
   {
@@ -124,23 +133,21 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '500gm',
     price: 150,
-    image: 'https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://i.pinimg.com/1200x/08/57/12/0857123c4cae85b5bc0fe37f0abf4319.jpg',
     description: 'Assorted chicken cuts for variety in your meals'
   },
   {
     id: 'offal-liver',
     name: 'Chicken Liver',
     category: 'offals',
-    weight: '250gm',
     price: 80,
-    image: 'https://i.pinimg.com/736x/a6/21/d7/a621d7a99b747a0b3876d0ec2499dd16.jpg',
+    image: 'https://vintage-recipes.com/wp-content/uploads/2024/08/Chicken-Livers-Horizontal.jpg',
     description: 'Fresh chicken liver, nutrient-rich and flavorful'
   },
   {
     id: 'offal-gizzard',
     name: 'Chicken Gizzard',
     category: 'offals',
-    weight: '250gm',
     price: 70,
     image: 'https://i.pinimg.com/736x/22/96/40/229640803f4dfde02c69a9410b54431c.jpg',
     description: 'Cleaned chicken gizzard, perfect for curries'
@@ -149,7 +156,6 @@ export const products: Product[] = [
     id: 'offal-head',
     name: 'Chicken Head',
     category: 'offals',
-    weight: '250gm',
     price: 40,
     image: 'https://i.pinimg.com/736x/32/6b/49/326b494eeac668a4ff87ed5eb55cf92e.jpg',
     description: 'For traditional recipes and special dishes'
@@ -158,7 +164,6 @@ export const products: Product[] = [
     id: 'offal-back',
     name: 'Chicken Back',
     category: 'offals',
-    weight: '500gm',
     price: 50,
     image: 'https://i.pinimg.com/1200x/63/4f/2f/634f2fe9db773d347339b2daf732589a.jpg',
     description: 'Ideal for making rich chicken stock'
@@ -167,16 +172,14 @@ export const products: Product[] = [
     id: 'offal-feet',
     name: 'Chicken Feet',
     category: 'offals',
-    weight: '500gm',
     price: 60,
     image: 'https://i.pinimg.com/736x/cc/30/83/cc30832330292bd29e1ab9a5b0ad4f89.jpg',
     description: 'Collagen-rich chicken feet'
   },
   {
     id: 'offal-mix',
-    name: 'Mixed Offals',
+    name: 'Mixed Cuts',
     category: 'offals',
-    weight: '500gm',
     price: 90,
     image: 'https://i.pinimg.com/736x/4e/56/2b/4e562b2fe00aa1699c65056842f2fba8.jpg',
     description: 'Assorted offals for traditional cooking'
@@ -187,7 +190,7 @@ export const products: Product[] = [
     category: 'eggs',
     quantity: 6,
     price: 60,
-    image: 'https://i.pinimg.com/736x/83/9e/ac/839eac8b3b90203638c8bc715c0b3143.jpg',
+    image: 'https://i.pinimg.com/736x/ac/05/ff/ac05ff382c8784edf71a460924522480.jpg',
     description: 'Farm fresh eggs, 6 pieces'
   },
   {
@@ -196,7 +199,7 @@ export const products: Product[] = [
     category: 'eggs',
     quantity: 15,
     price: 150,
-    image: 'https://i.pinimg.com/1200x/e7/ec/ad/e7ecad2cb4407d501f771f28ec66ce45.jpg',
+    image: 'https://i.pinimg.com/736x/ac/05/ff/ac05ff382c8784edf71a460924522480.jpg',
     description: 'Farm fresh eggs, 15 pieces'
   },
   {
@@ -205,7 +208,7 @@ export const products: Product[] = [
     category: 'eggs',
     quantity: 30,
     price: 280,
-    image: 'https://i.pinimg.com/1200x/15/35/3e/15353ed0b6de9533ae1cd80a9ea668b3.jpg',
+    image: 'https://i.pinimg.com/736x/ac/05/ff/ac05ff382c8784edf71a460924522480.jpg',
     description: 'Farm fresh eggs, 30 pieces'
   }
 ];
