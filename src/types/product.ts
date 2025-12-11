@@ -88,7 +88,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '1KG',
     price: 180,
-    image: 'https://i.pinimg.com/1200x/e3/39/1a/e3391a187bc06e904414c38e3d0f67a4.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765424679/breast_hxqwzx.jpg',
     description: 'Premium boneless chicken breast, ideal for grilling and frying'
   },
   {
@@ -97,7 +97,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '1KG',
     price: 120,
-    image: 'https://i.pinimg.com/originals/ba/b2/80/bab2808aeefe513910e2306504742af8.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765424710/wings_fd3axg.jpg',
     description: 'Juicy chicken wings, perfect for BBQ and appetizers'
   },
   {
@@ -106,7 +106,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '1KG',
     price: 160,
-    image: 'https://i.pinimg.com/1200x/9c/56/6e/9c566eab92aa534a8cea6c6b91dd756f.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765424780/thigh_paemaw.jpg',
     description: 'Tender boneless thigh meat, rich in flavor'
   },
   {
@@ -115,7 +115,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '1KG',
     price: 140,
-    image: 'https://i.pinimg.com/1200x/f3/12/2a/f3122a4a3f8dcf507cd9980d13ec3981.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765424780/sticks_jo2lqa.jpg',
     description: 'Succulent drumsticks, great for roasting and curry'
   },
   {
@@ -124,7 +124,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '1KG',
     price: 130,
-    image: 'https://i.pinimg.com/736x/1c/87/89/1c8789472f7b81125642bc7b89916c52.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765424878/legs_idwdpq.jpg',
     description: 'Full leg quarters with thigh and drumstick'
   },
   {
@@ -133,7 +133,7 @@ export const products: Product[] = [
     category: 'cuts',
     weight: '1KG',
     price: 150,
-    image: 'https://doulabiz.com/wp-content/uploads/2021/09/Mixed-chicken-parts.jpeg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765424987/mixed-cut_hjuwqn.jpg',
     description: 'Assorted chicken cuts for variety in your meals'
   },
   {
@@ -141,7 +141,7 @@ export const products: Product[] = [
     name: 'Chicken Liver',
     category: 'offals',
     price: 80,
-    image: 'https://i.pinimg.com/1200x/79/3a/14/793a14a38d090835ce2f498f21f0263a.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765424987/liver_r6most.jpg',
     description: 'Fresh chicken liver, nutrient-rich and flavorful'
   },
   {
@@ -149,7 +149,7 @@ export const products: Product[] = [
     name: 'Chicken Gizzard',
     category: 'offals',
     price: 70,
-    image: 'https://i.pinimg.com/736x/22/96/40/229640803f4dfde02c69a9410b54431c.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765424986/gizzard_fpkfvm.jpg',
     description: 'Cleaned chicken gizzard, perfect for curries'
   },
  /*  {
@@ -191,7 +191,7 @@ export const products: Product[] = [
     category: 'eggs',
     quantity: 6,
     price: 60,
-    image: 'https://i.pinimg.com/736x/ac/05/ff/ac05ff382c8784edf71a460924522480.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765425071/eggs_kq98pb.jpg',
     description: 'Farm fresh eggs, 6 pieces'
   },
   {
@@ -200,7 +200,7 @@ export const products: Product[] = [
     category: 'eggs',
     quantity: 15,
     price: 150,
-    image: 'https://i.pinimg.com/736x/ac/05/ff/ac05ff382c8784edf71a460924522480.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765425071/eggs_kq98pb.jpg',
     description: 'Farm fresh eggs, 15 pieces'
   },
   {
@@ -209,7 +209,7 @@ export const products: Product[] = [
     category: 'eggs',
     quantity: 30,
     price: 280,
-    image: 'https://i.pinimg.com/736x/ac/05/ff/ac05ff382c8784edf71a460924522480.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765425071/eggs_kq98pb.jpg',
     description: 'Farm fresh eggs, 30 pieces'
   }
 ];

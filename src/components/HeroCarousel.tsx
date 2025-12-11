@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 const slides = [
   {
-    image: 'https://i.pinimg.com/1200x/0c/9c/89/0c9c89bf8503c6d2ac55b85afa216dc2.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765425266/1_cdypnz.jpg',
     title: 'Premium Whole Chicken',
     subtitle: 'Fresh, cleaned & ready to cook'
   },
@@ -14,12 +14,12 @@ const slides = [
   },
 
   {
-    image: 'https://static.vecteezy.com/system/resources/previews/030/637/817/large_2x/eggs-image-hd-free-photo.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765425340/2_lu3uam.jpg',
     title: 'Farm Fresh Eggs',
     subtitle: 'Delivered fresh daily'
   },
      {
-    image: 'https://www.tastingtable.com/img/gallery/the-best-cuts-of-chicken-ranked/l-intro-1659739353.jpg',
+    image: 'https://res.cloudinary.com/dfp5qmbgz/image/upload/v1765425411/3_wmnfia.jpg',
     title: 'Fresh Chicken Cuts',
     subtitle: 'Perfectly portioned for your needs'
   }
